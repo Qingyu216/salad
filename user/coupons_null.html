@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>B•Buff能力沙拉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/coupons.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page">
+        <!--头部内容-->
+        <div data-role="header" data-position="fixed" class="header">
+            <img src="../images/logo.png" /><span>B•Buff能力沙拉</span>
+        </div>
+        <!--内容部分-->
+        <div data-role="main" class="content notop">
+            <div class="content_box coupons_null">
+                <img src="../images/coupons_null.png">
+                <a href="javascript:;" data-ajax="false" class="ui-link">
+                    <div class="coupons_null_btn">点击领取优惠券</div>
+                </a>
+            </div>
+        </div>
+        <!--脚部内容-->
+        <div id="footer" class="footer navBar">
+            <a href="../index.html" data-ajax="false" class="home"><span></span><p>首页</p></a>
+            <a href="../distributionArea/index.html" data-ajax="false" class="fuli"><span></span><p>配送区域</p></a>
+            <a href="../cart/cart.html" data-ajax="false" class="cart"><span style="position:relative;"><b class="badge" id="cart-badge">9</b></span><p>购物车</p></a>
+            <a href="../user/index.html" data-ajax="false" class="my active"><span></span><p>我的</p></a>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            var num = $('.badge').text();
+            if (num <= 0) {
+                $('.badge').hide();
+            } else {
+                $('.badge').show();
+            }
+        });
+    </script>
+</body>
+
+</html>

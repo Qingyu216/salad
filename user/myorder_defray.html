@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>B•Buff能力沙拉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/myorder_defray.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        $(document).bind("scroll", srcollEvent);
+
+        /*touchstart事件：当手指触摸屏幕时候触发，即使已经有一个手指放在屏幕上也会触发。
+        　　touchmove事件：当手指在屏幕上滑动的时候连续地触发。在这个事件发生期间，调用preventDefault()事件可以阻止滚动。
+        　　touchend事件：当手指从屏幕上离开的时候触发。
+        　　touchcancel事件：当系统停止跟踪触摸的时候触发。*/
+        $(document).bind("touchstart", startEvent).bind("touchmove", moveEvent).bind("touchcancel", stopEvent).bind("touchend", stopEvent);
+        var isScrollStop = true; //页面是否停止滚动 防止屏幕有滑动但还没到底部就开始加载数据
+        var isMoveDown = false; //防止手指向上滑动屏幕开始加载数据
+        var isLoading = false; //防止异步请求数据未返回到前端的时候重复提交请求
+        var isMoved = false; //手指是否在滑动屏幕 防止出现手指触摸屏幕而没有滑动就加载数据
+        var startY = 0;
+        var startX = 0;
+
+        function srcollEvent() {
+
+            if ($(document).scrollTop() > 0) {
+                isScrollStop = false;
+            }
+            //如果是左右滑动异步加载数据就用下面的代码
+            /*
+            if ($(document).scrollLeft() > 0) {
+                isScrollStop = false;
+            }*/
+        }
+
+        //targetTouches绑定事件的那个结点上的触摸点的集合列表
+        //changedTouches触发事件时改变的触摸点的集合
+        function startEvent() {
+            startY = event.targetTouches[0].clientY;
+            //如果是左右滑动加载数据就用下面的代码
+            //startX = event.targetTouches[0].clientX;
+            isScrollStop = true;
+            isMoved = false;
+            isMoveDown = false;
+        }
+
+        function moveEvent() {
+            var Y = event.targetTouches[0].clientY;
+            if (startY > Y) {
+                isMoveDown = true;
+            } else {
+                isMoveDown = false;
+            }
+            //如果是左右滑动加载数据就用下面的代码
+            /*var X = event.targetTouches[0].clientX;
+            if (startX > X) {
+                isMoveDown = true;
+            } else {
+                isMoveDown = false;
+            }*/
+            isMoved = true;
+
+        }
+
+        function stopEvent() {
+            if (isScrollStop && isMoved && !isLoading && isMoveDown) {
+                console.log("分页加载");
+                loadData();
+            }
+        }
+        var index = 0;
+
+        function loadData() { //模拟向后台异步加载数据
+            isLoading = true; //异步加载数据之前先设置为正在等待数据        
+            $(".content").append('<div class="content_box">' + $('.content .content_box').eq(0).html() + '</div>');
+            isLoading = false;
+            isMoved = false;
+        }
+    </script>
+</head>
+
+<body>
+    <div data-role="page">
+        <!--头部内容-->
+        <div data-role="header" data-position="fixed" class="header">
+            <img src="../images/logo.png" /><span>B•Buff能力沙拉</span>
+        </div>
+        <!--内容部分-->
+        <div data-role="main" class="content notop">
+            <div class="myOrder_tab">
+                <ul>
+                    <li class="myOrder_tab_selected">全部</li>
+                    <li>待付款</li>
+                    <li>待发货</li>
+                    <li>配送中</li>
+                    <li>已完成</li>
+                </ul>
+            </div>
+            <div class="content_box">
+                <div class="myorder_defray">
+                    <div class="myorder_defray_left">订单编号:005254522422052452020</div>
+                    <div class="myorder_defray_right">代付款</div>
+                </div>
+                <div class="myorder_defray_foot">
+                    <img src="../images/1.jpg">
+                    <div class="myorder_defray_name">
+                        <p>嫩虾香芒乌冬</p>
+                        <p>味噌酱+无面包</p>
+                        <p>￥<span>84</span></p>
+                    </div>
+                    <div class="myorder_defray_number">x2</div>
+                </div>
+                <div class="myorder_defray_foot">
+                    <img src="../images/1.jpg">
+                    <div class="myorder_defray_name">
+                        <p>嫩虾香芒乌冬</p>
+                        <p>味噌酱+无面包</p>
+                        <p>￥<span>84</span></p>
+                    </div>
+                    <div class="myorder_defray_number">x2</div>
+                </div>
+                <div class="myorder_defray_money">
+                    <span>总共<span>4</span>件</span>
+                    <span>￥180.00</span>
+                    <div class="defray_money_sure">支付</div>
+                    <div class="defray_money_cancel">取消</div>
+                </div>
+                <div style="height: 0.5rem;background:#F8F9FA;"></div>
+            </div>
+        </div>
+        <!--脚部内容-->
+        <div id="footer" class="footer navBar">
+            <a href="../index.html" data-ajax="false" class="home"><span></span><p>首页</p></a>
+            <a href="../distributionArea/index.html" data-ajax="false" class="fuli"><span></span><p>配送区域</p></a>
+            <a href="../cart/cart.html" data-ajax="false" class="cart"><span style="position:relative;"><b class="badge" id="cart-badge">9</b></span><p>购物车</p></a>
+            <a href="../user/index.html" data-ajax="false" class="my active"><span></span><p>我的</p></a>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            var num = $('.badge').text();
+            if (num <= 0) {
+                $('.badge').hide();
+            } else {
+                $('.badge').show();
+            }
+        });
+    </script>
+</body>
+
+</html>

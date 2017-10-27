@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>B•Buff能力沙拉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/order_all.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page">
+        <!--头部内容-->
+        <div data-role="header" data-position="fixed" class="header">
+            <img src="../images/logo.png" /><span>B•Buff能力沙拉</span>
+        </div>
+        <!--内容部分-->
+        <div data-role="main" class="content notop">
+            <div class="myOrder_tab">
+                <ul>
+                    <li class="myOrder_tab_selected">全部</li>
+                    <li>待付款</li>
+                    <li>待发货</li>
+                    <li>配送中</li>
+                    <li>已完成</li>
+                </ul>
+            </div>
+            <div class="content_box">
+                <div class="myorder_defray">
+                    <div class="myorder_defray_left">订单编号:005254522422052452020</div>
+                    <div class="myorder_defray_right">代付款</div>
+                </div>
+                <div class="myorder_defray_foot">
+                    <img src="../images/1.jpg">
+                    <div class="myorder_defray_name">
+                        <p>嫩虾香芒乌冬</p>
+                        <p>味噌酱+无面包</p>
+                        <p>￥<span>84</span></p>
+                    </div>
+                    <div class="myorder_defray_number">x2</div>
+                </div>
+                <div class="myorder_defray_foot">
+                    <img src="../images/1.jpg">
+                    <div class="myorder_defray_name">
+                        <p>嫩虾香芒乌冬</p>
+                        <p>味噌酱+无面包</p>
+                        <p>￥<span>84</span></p>
+                    </div>
+                    <div class="myorder_defray_number">x2</div>
+                </div>
+                <div class="myorder_defray_money">
+                    <span>总共<span>4</span>件</span>
+                    <span>￥180.00</span>
+                    <div class="defray_money_sure">支付</div>
+                    <div class="defray_money_cancel">取消</div>
+                </div>
+            </div>
+            <div style="height: 1rem;background:#F8F9FA;"></div>
+            <div class="content_box" style="margin-bottom:4rem;">
+                <div class="myorder_defray">
+                    <div class="myorder_defray_left">订单编号:005254522422052452020</div>
+                    <div class="myorder_defray_right">已取消</div>
+                </div>
+                <div class="myorder_defray_foot">
+                    <img src="../images/1.jpg">
+                    <div class="myorder_defray_name">
+                        <p>嫩虾香芒乌冬</p>
+                        <p>味噌酱+无面包</p>
+                        <p>￥<span>84</span></p>
+                    </div>
+                    <div class="myorder_defray_number">x2</div>
+                </div>
+                <div class="myorder_defray_foot">
+                    <img src="../images/1.jpg">
+                    <div class="myorder_defray_name">
+                        <p>嫩虾香芒乌冬</p>
+                        <p>味噌酱+无面包</p>
+                        <p>￥<span>84</span></p>
+                    </div>
+                    <div class="myorder_defray_number">x2</div>
+                </div>
+                <div class="myorder_defray_money">
+                    <span>总共<span>4</span>件</span>
+                    <span>￥180.00</span>
+                </div>
+            </div>
+        </div>
+        <!--脚部内容-->
+        <div id="footer" class="footer navBar">
+            <a href="../index.html" data-ajax="false" class="home"><span></span><p>首页</p></a>
+            <a href="../distributionArea/index.html" data-ajax="false" class="fuli"><span></span><p>配送区域</p></a>
+            <a href="../cart/cart.html" data-ajax="false" class="cart"><span style="position:relative;"><b class="badge" id="cart-badge">9</b></span><p>购物车</p></a>
+            <a href="../user/index.html" data-ajax="false" class="my active"><span></span><p>我的</p></a>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            var num = $('.badge').text();
+            if (num <= 0) {
+                $('.badge').hide();
+            } else {
+                $('.badge').show();
+            }
+        });
+    </script>
+</body>
+
+</html>

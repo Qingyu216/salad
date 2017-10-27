@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>B•Buff能力沙拉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/address_add.css">
+    <link rel="stylesheet" href="../css/area.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+    <div data-role="page">
+        <!--头部内容-->
+        <div data-role="header" data-position="fixed" class="header">
+            <img src="../images/logo.png" /><span>B•Buff能力沙拉</span>
+        </div>
+        <!--内容部分-->
+        <form action="" class="address_content_form">
+            <div data-role="main" class="content notop">
+                <div class="content_box">
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>联系人</td>
+                            <td>
+                                <input type="text" placeholder="您的姓名">
+                                <div class="sex_select_div">
+                                    <span sex="1" class="sex_select_span sex_checked"></span>
+                                    <div>先生</div>
+                                </div>
+                                <div class="sex_select_div sex_ml">
+                                    <span sex="2" class="sex_select_span"></span>
+                                    <div>女士</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机号码</td>
+                            <td><input type="text" placeholder="送餐员联系您的电话"></td>
+                        </tr>
+                        <tr>
+                            <td>所在城市</td>
+                            <td>
+                                <input id="demo1" type="text" readonly="" placeholder="城市选择特效" value="" />
+                                <input id="value1" type="hidden" value="20,234,504" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>收货地址</td>
+                            <td class="ceiving_address">烦烦烦烦烦烦烦</td>
+                        </tr>
+                        <tr>
+                            <td>门牌号</td>
+                            <td><input type="text" placeholder="请输入门号等详细信息"></td>
+                        </tr>
+                        <tr>
+                            <td>地址类型(选填)</td>
+                            <td>
+                                <div class="addr_select_div">
+                                    <span index="1" class="addr_select_span addr_checked"></span>
+                                    <div>公司</div>
+                                </div>
+                                <div class="addr_select_div addr_ml">
+                                    <span index="2" class="addr_select_span"></span>
+                                    <div>家</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--脚部内容-->
+            <div id="footer" class="footer navBar">
+                <input type="button" value="保存" class="address_add_save">
+            </div>
+        </form>
+        <div class="ceiving_address_alert">
+            <p>请选择所在城市</p>
+            <div class="ceiving_alert_sure">确定</div>
+        </div>
+    </div>
+    <script src="../js/LAreaData1.js"></script>
+    <script src="../js/LAreaData2.js"></script>
+    <script src="../js/LArea.js"></script>
+    <script>
+        $(function() {
+            $('.sex_select_div').click(function(event) {
+                $(this).children('span').addClass('sex_checked').parent().siblings('.sex_select_div').children('span').removeClass('sex_checked');
+            });
+            $('.addr_select_div').click(function(event) {
+                $(this).children('span').addClass('addr_checked').parent().siblings('.addr_select_div').children('span').removeClass('addr_checked');
+            });
+
+            //地址选择
+            var area1 = new LArea();
+            area1.init({
+                'trigger': '#demo1', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+                'valueTo': '#value1', //选择完毕后id属性输出到该位置
+                'keys': {
+                    id: 'id',
+                    name: 'name'
+                }, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+                'type': 1, //数据源类型
+                'data': LAreaData //数据源
+            });
+            area1.value = [0, 10, 0]; //控制初始位置，注意：该方法并不会影响到input的value
+
+
+            //收货地址
+            $('.ceiving_address').click(function() {
+                if ($('#demo1').val() == "") {
+                    $('.ceiving_address_alert').show(); 
+                    $('.address_content_form').css('opacity','0.3');
+                } else {
+                    $('.ceiving_address_alert').hide();
+                    $('.address_content_form').css('opacity','1');
+                }
+            });
+            $('.ceiving_alert_sure').click(function(){
+                $(this).parent().hide();
+                $('.address_content_form').css('opacity','1');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

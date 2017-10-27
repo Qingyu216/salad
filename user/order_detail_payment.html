@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>B•Buff能力沙拉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/order_detail_payment.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page">
+        <!--头部内容-->
+        <div data-role="header" data-position="fixed" class="header">
+            <img src="../images/logo.png" /><span>B•Buff能力沙拉</span>
+        </div>
+        <!--内容部分-->
+        <div data-role="main" class="content notop">
+            <div class="content_box">
+                <div class="order_detail">
+                    <div class="order_detail_left">订单编号:005254522422052452020</div>
+                    <div class="order_detail_right">待付款</div>
+                </div>
+                <div style="height: 1rem;background:#F8F9FA;"></div>
+                <div class="order_detail_addr">
+                    <ul class="express_detail">
+                        <li class="clearfix"><span class="name">收货人：lqyu</span><span class="tel">18911615202</span></li>
+                        <li class="address_detail">收货地址： 北京市北京市东城区建国门南大街万豪中心一层 嘉和一品粥(建国门店)</li>
+                    </ul>
+                </div>
+                <div class="myorder_defray_foot">
+                    <img src="../images/1.jpg">
+                    <div class="myorder_defray_name">
+                        <p>嫩虾香芒乌冬</p>
+                        <p>味噌酱+无面包</p>
+                        <p>￥<span>84</span></p>
+                    </div>
+                    <div class="myorder_defray_number">x2</div>
+                </div>
+                <div class="myorder_defray_foot">
+                    <img src="../images/2.jpg">
+                    <div class="myorder_defray_name">
+                        <p>嫩虾香芒乌冬</p>
+                        <p>味噌酱+无面包</p>
+                        <p>￥<span>84</span></p>
+                    </div>
+                    <div class="myorder_defray_number">x2</div>
+                </div>
+                <p class="distribution_time"><span>配送时间：</span>08-29 周二 12:30 以前</p>
+                <div style="height: 1rem;background:#F8F9FA;"></div>
+                <div class="goods_total">
+                    <table>
+                        <tr>
+                            <td class="goods_total_left">商品总额</td>
+                            <td class="goods_total_right">¥162.00</td>
+                        </tr>
+                        <tr>
+                            <td class="goods_total_left">配送费</td>
+                            <td class="goods_total_right">¥1.00</td>
+                        </tr>
+                        <tr>
+                            <td class="goods_total_left">优惠金额</td>
+                            <td class="goods_total_right">¥0.00</td>
+                        </tr>
+                        <tr>
+                            <td class="goods_total_left"></td>
+                            <td class="goods_total_right">应付金额：¥168.00</td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="height: 1rem;background:#F8F9FA;"></div>
+                <div class="goods_remark">
+                    <table>
+                        <tr>
+                            <td class="goods_remark_left">付款时间：</td>
+                            <td class="goods_remark_right">2054511</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="order_payment_btn">
+                    <a href="javascript:;">
+                        <div class="order_payment_sure">支付</div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="order_payment_cancel">取消</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--脚部内容-->
+        <div id="footer" class="footer navBar">
+            <a href="../index.html" data-ajax="false" class="home"><span></span><p>首页</p></a>
+            <a href="../distributionArea/index.html" data-ajax="false" class="fuli"><span></span><p>配送区域</p></a>
+            <a href="../cart/cart.html" data-ajax="false" class="cart"><span style="position:relative;"><b class="badge" id="cart-badge">9</b></span><p>购物车</p></a>
+            <a href="../user/index.html" data-ajax="false" class="my active"><span></span><p>我的</p></a>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            var num = $('.badge').text();
+            if (num <= 0) {
+                $('.badge').hide();
+            } else {
+                $('.badge').show();
+            }
+        });
+    </script>
+</body>
+
+</html>
