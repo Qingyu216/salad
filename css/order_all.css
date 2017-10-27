@@ -1,0 +1,150 @@
+@media screen and (max-width:370px) {
+    .myorder_defray .myorder_defray_left,
+    .myorder_defray .myorder_defray_right {
+        font-size: 0.9rem;
+    }
+
+    .myorder_defray_money > span {
+        font-size: 1rem !important;
+    }
+    .myorder_defray_money > div {
+        padding: 0.3rem 1.5rem !important;
+    }
+}
+
+/*内容部分样式*/
+
+.content.notop {
+    padding-top: 0;
+}
+
+.content {
+    overflow-x: hidden;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.content .content_box {
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%;
+    width: 95.5%;
+}
+
+.badge {
+    position: absolute;
+    top: -0.4rem;
+    right: -0.8rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    line-height: 1rem;
+    font-size: 16px;
+    font-family: serif;
+    color: #fff;
+    background-color: #FF9934;
+    border-radius: 0.6rem;
+    display: none;
+}
+
+
+.myOrder_tab {
+    overflow: hidden;
+}
+
+.myOrder_tab ul li {
+    width: 20%;
+    float: left;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.myOrder_tab ul li.myOrder_tab_selected {
+    color: #306EB9;
+    border-bottom: 2px solid #306EB9;
+}
+
+.myorder_defray {
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.myorder_defray .myorder_defray_left {
+    float: left;
+    color: #999;
+}
+
+.myorder_defray .myorder_defray_right {
+    float: right;
+    color: black;
+}
+
+.myorder_defray_foot {
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.myorder_defray_foot > img {
+    width: 25%;
+    margin-right: 5%;
+    float: left;
+}
+
+.myorder_defray_name {
+    position: relative;
+    float: left;
+}
+
+.myorder_defray_name p {
+    line-height: 2rem;
+}
+
+.myorder_defray_name p:nth-child(2) {
+    color: #666;
+}
+
+.myorder_defray_name p:nth-child(3) {
+    color: #FF9934;
+    font-size: 0.8rem;
+}
+
+.myorder_defray_name p:nth-child(3) span {
+    font-size: 1.3rem;
+}
+
+.myorder_defray_number {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+.myorder_defray_money {
+    overflow: hidden;
+    margin: 4rem 0;
+}
+
+.myorder_defray_money > div {
+    float: right;
+    padding: 0.5rem 2rem;
+}
+
+.myorder_defray_money > span {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.myorder_defray_money>span:nth-child(1) span ,
+.myorder_defray_money>span:nth-child(2) {
+    color: #FF9934;
+}
+
+.myorder_defray_money .defray_money_cancel {
+    border: 1px solid black;
+    color: black;
+    background: white;
+}
+
+.myorder_defray_money .defray_money_sure {
+    border: 1px solid #FF9934;
+    color: white;
+    background: #FF9934;
+}

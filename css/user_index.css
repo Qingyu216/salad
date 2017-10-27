@@ -1,0 +1,135 @@
+@media screen and (max-width:370px) {
+    .user_content_top_img {
+        width: 90px !important;
+        height: 90px !important;
+        border-radius: 45px;
+    }
+    .user_content_top_text {
+        font-size: 1rem !important;
+        margin-left: 1rem !important;
+        margin-top: 15px !important;
+    }
+}
+
+/*内容部分样式*/
+
+.content.notop {
+    padding-top: 0;
+}
+
+.content {
+    overflow-x: hidden;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.content .content_box {
+    margin: 0 auto 4rem;
+    overflow: hidden;
+    height: 100%;
+}
+
+.badge {
+    position: absolute;
+    top: -0.4rem;
+    right: -0.8rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    line-height: 1rem;
+    font-size: 16px;
+    font-family: serif;
+    color: #fff;
+    background-color: #FF9934;
+    border-radius: 0.6rem;
+    display: none;
+}
+
+.user_content_top {
+    width: 95.5%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+.user_content_top > div {
+    float: left;
+}
+
+.user_content_top_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.user_content_top_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.user_content_top_text {
+    line-height: 30px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
+
+.user_content_center {
+    overflow: hidden;
+}
+
+.user_content_center ul a li {
+    padding: 1rem 2rem 1rem 1rem;
+    border-bottom: 1px solid #F5F5F5;
+    color: #666;
+    position: relative;
+    cursor: pointer;
+}
+
+.user_content_center ul a li img {
+    float: left;
+    width: 2rem;
+    margin-right: 1rem;
+    margin-top: -0.5rem;
+}
+
+.user_content_center ul a li span {
+    position: absolute;
+    right: 1rem;
+    top: 0px;
+    font-size: 2rem;
+    color: #939393;
+    line-height: 3rem;
+}
+
+.service_tel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.service_tel table {
+    width: 100%;
+}
+
+.service_tel table tr td {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.service_tel table tr td:nth-child(1) {
+    width: 20%;
+    text-align: right;
+}
+.service_tel table tr td:nth-child(2) {
+    text-align: center;
+    width: 80%;
+}
+
+.service_tel img {
+    width: 2rem;
+    position: absolute;
+    right: 0;
+    top: 2rem;
+}

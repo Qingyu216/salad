@@ -1,0 +1,22 @@
+/*内容部分样式*/
+
+.content.notop {
+    padding-top: 0;
+}
+
+.content {
+    overflow-x: hidden;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.content .content_box {
+    margin: 0 auto 4rem;
+    overflow: hidden;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+.scope_map > img {
+    width: 100%;
+}

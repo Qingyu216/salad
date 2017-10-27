@@ -1,0 +1,96 @@
+@media screen and (max-width:370px) {
+    .user_content_top_img {
+        width: 90px !important;
+        height: 90px !important;
+        border-radius: 45px;
+    }
+    .user_content_top_text {
+        font-size: 1rem !important;
+        margin-left: 1rem !important;
+        margin-top: 15px !important;
+    }
+    .coupons_content_right {
+        font-size: 0.6rem;
+    }
+}
+
+/*内容部分样式*/
+
+.content.notop {
+    padding-top: 0;
+}
+
+.content {
+    overflow-x: hidden;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.content .content_box {
+    margin: 0 auto 4rem;
+    overflow: hidden;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+.coupons_content {
+    width: 95.5%;
+    height: 10rem;
+    margin: 0 auto;
+    background: url('../images/gouwuquan.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.coupons_content_left {
+    float: left;
+    color: #306EB9;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.coupons_content_left a {
+    display: block;
+    border: 1px solid #306EB9;
+    color: #306EB9;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+.coupons_content_left span {
+    font-size: 2rem;
+}
+
+.coupons_content_right {
+    float: right;
+    margin-right: 2rem;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+}
+
+.coupons_content_right ul li {
+    list-style: inside;
+    color: #666;
+}
+
+.coupons_content_right p {
+    font-weight: 800;
+}
+
+
+.coupons_null > img {
+    width: 100%;
+}
+
+.coupons_null_btn {
+    padding: 0.7rem 0;
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+    background: #306EB9;
+    color: white;
+    font-size: 1.1rem;
+}

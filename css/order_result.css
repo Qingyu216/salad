@@ -1,0 +1,111 @@
+.ui-page-theme-a .ui-bar-inherit {
+    border-color: #CCC;
+}
+
+.ui-page-theme-a .ui-bar-inherit {
+    background: white;
+}
+
+.ui-page-theme-a .ui-btn {
+    background-color: white;
+    border-color: white;
+    color: #989898;
+    font-size: 30px;
+}
+
+.ui-shadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.back {
+    font-size: 30px;
+}
+
+.ui-btn-left {
+    top: 0;
+}
+
+.ui-btn {
+    padding: 0;
+}
+
+.order_result {
+    width: 95.5%;
+    margin: 0 auto;
+}
+
+.complete {
+    color: #FF9934 !important;
+    font-size: 1.2rem !important;
+    margin-top: 0.4rem !important;
+}
+
+.successful_purchase {
+    width: 100%;
+    padding: 1rem 0;
+    position: relative;
+    border-bottom: 0.3rem solid #F2F2F2;
+}
+
+.successful_purchase img {
+    width: 2rem;
+    float: left;
+    border-radius: 50%;
+    margin-left: 35%;
+}
+
+.successful_purchase span {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+.successful_purchase_info {
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+.successful_purchase_info table {
+    width: 100%;
+}
+
+.successful_purchase_info table tr td {
+    padding: 0.5rem 0;
+    word-wrap: break-word;
+    font-size: 0.8rem;
+}
+
+.successful_purchase_info table tr td:nth-child(1) {
+    width: 30%;
+    font-size: 1rem;
+}
+
+.successful_purchase_info table tr td:nth-child(2) {
+    width: 70%;
+}
+
+.successful_purchase_info table tr td.price_color {
+    color: #FF9934;
+    font-size: 1.2rem;
+}
+
+.successful_purchase_back_box {
+    width: 95%;
+    margin: 0 auto;
+    background: #EFEFEF;
+    padding: 3rem 0;
+}
+
+.successful_purchase_back_box a div {
+    padding: 0.8rem 0;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    color: #306EB9;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}

@@ -1,0 +1,342 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background: white;
+}
+
+/*购物车*/
+
+.shopping {
+    clear: both;
+    overflow: hidden;
+    height: auto;
+}
+
+.shop-group-item {
+    margin-bottom: 5px;
+}
+
+.shop-group-item ul li {
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+
+.shop-group-item ul li:last-child {
+    border-bottom: none;
+}
+
+.shop-name {
+    background: #fff;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 15px;
+    position: relative;
+}
+
+.shop-name h4 {
+    float: left;
+    font-size: 14px;
+    background: url(../images/logo.png) no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 25px;
+    margin-left: 28px;
+}
+
+.shop-name .coupons {
+    float: right;
+}
+
+.shop-name .coupons {
+    display: inline-block;
+    padding: 0 5px;
+    color: #FF9934;
+}
+
+.shop-name .coupons em {
+    color: #e0e0e0;
+}
+
+.delete_food {
+    padding: 0 0.5rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    line-height: 120px;
+    color: white;
+    background: #f23030;
+    display: none;
+}
+
+.shop-info {
+    background: white;
+    height: 120px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.shop-info .checkbox {
+    background: url(../images/icon_radio3.png) no-repeat left center;
+    background-size: 20px 20px;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    margin-top: -60px;
+    width: 20px;
+    height: 120px;
+}
+
+.shop-info .checkbox1 {
+    background: url(../images/icon_radio4.png) no-repeat left center;
+    background-size: 20px 20px;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    margin-top: -60px;
+    width: 20px;
+    height: 120px;
+}
+
+.shop-info .shop-info-img {
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    width: 90px;
+    height: 90px;
+}
+
+.shop-info .shop-info-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.shop-info .shop-info-text {
+    margin-left: 130px;
+    padding: 15px 0;
+}
+
+.shop-info .shop-info-text h4 {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.shop-info .shop-info-text .shop-brief {
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #81838e;
+    white-space: nowrap;
+}
+
+.shop-info .shop-info-text .shop-brief span {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.shop-info .shop-info-text .shop-price {
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+}
+
+.shop-info .shop-info-text .shop-price .shop-pices {
+    color: #FF9934;
+    font-size: 16px;
+}
+
+.shop-info .shop-info-text .shop-arithmetic {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 84px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    height: 100%;
+    border: 1px solid #e0e0e0;
+}
+
+.shop-info .shop-info-text .shop-arithmetic a {
+    display: inline-block;
+    width: 23px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    background: #fff;
+    font-size: 16px;
+}
+
+.shop-info .shop-info-text .shop-arithmetic .minus {
+    border-right: 1px solid #e0e0e0;
+}
+
+.shop-info .shop-info-text .shop-arithmetic .failed {
+    color: #d1d1d1;
+}
+
+.shop-info .shop-info-text .shop-arithmetic .plus {
+    border-left: 1px solid #e0e0e0;
+}
+
+.shop-info .shop-info-text .shop-arithmetic .num {
+    width: 32px;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    height: 100%;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0 -6px;
+}
+
+.shopPrice {
+    background: #fff;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    text-align: right;
+}
+
+.shopPrice span {
+    color: #FF9934;
+}
+
+.payment-bar {
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+    height: 49px;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+.payment-bar .all-checkbox {
+    float: left;
+    line-height: 49px;
+    padding-left: 40px;
+}
+
+.payment-bar .shop-total {
+    float: right;
+    -webkit-box-flex: 1.0;
+    box-flex: 1.0;
+    margin: 9px 35px 9px 35px;
+}
+
+.payment-bar .shop-total strong {
+    display: block;
+    color: #FF9934;
+    font-size: 16px;
+}
+
+.payment-bar .shop-total span {
+    display: block;
+    font-size: 12px;
+    color: #999;
+}
+
+.payment-bar .settlement {
+    display: inline-block;
+    float: right;
+    width: 100px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background: #FF9934;
+}
+
+
+.popout_confirm {
+    position: absolute;
+    width: 70%;
+    top: 30%;
+    left: 15%;
+    background: white;
+    z-index: 999;
+    overflow: hidden;
+    display: none;
+    box-shadow: 0 0 20px #000;
+}
+
+.popout_confirm p {
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 1.2rem;
+}
+
+.popout_confirm .popout_confirm_cancel {
+    background: white;
+    color: black;
+}
+
+.popout_confirm > div {
+    padding: 0.7rem 0;
+    width: 50%;
+    text-align: center;
+    background: #FF9934;
+    color: white;
+    float: left;
+    font-size: 1.1rem;
+    border-top: 1px solid #D0D0D0;
+}
+
+.plase_select {
+    width: 70%;
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    top: 40%;
+    left: 15%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    background: rgba(9, 9, 10, 0.8);
+}
+
+.unable_buy {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #666;
+    border-top: 1rem solid #F8F9FA;
+    border-bottom: 1rem solid #F8F9FA;
+}
+
+.lapse_box {
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.lapse_box .shop-info .shop-info-img {
+    left: 20px;
+}
+
+.lapse_box .shop-info .shop-info-text {
+    margin-left: 120px;
+}
+
+.lapse_box .shop-arithmetic {
+    border: none !important;
+    text-align: right;
+}
+
+.lapse_food_btn {
+    height: 40px;
+}
+
+.lapse_food_btn a {
+    width: auto;
+    padding: 10px 30px;
+    border-radius: 3px;
+    line-height: 40px;
+    color: #FF9934;
+    border: 1px solid #FF9934;
+}

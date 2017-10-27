@@ -1,0 +1,37 @@
+.diul_page {
+    background: url('../images/error_bg.jpg') no-repeat !important;
+    min-height: 600px;
+}
+
+.diul_page_box {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.diul_page_box > img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.diul_page_title_one,
+.diul_page_title_two {
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.diul_page_title_three {
+    font-size: 0.6rem;
+    margin: 2rem 0;
+}
+
+.back_home_btn {
+    padding: 0.7rem 0;
+    width: 70%;
+    border-radius: 6px;
+    text-align: center;
+    background: #306EB9;
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+}

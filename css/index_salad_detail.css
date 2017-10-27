@@ -1,0 +1,419 @@
+/*内容部分样式*/
+
+.content.notop {
+    padding-top: 0;
+}
+
+.content {
+    overflow-x: hidden;
+    font-size: 1rem;
+    background: #fff;
+    margin: 0 auto 4rem;
+}
+
+.content .shuffling_figure {
+    overflow: hidden;
+    position: relative;
+}
+
+.content_box {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content_box_top {
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+    width: 95.5%;
+    margin: 0 auto;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.content_box_top > div {
+    float: left;
+}
+
+.content_box_top .content_box_topRight {
+    position: absolute;
+    right: 0px;
+    font-size: 0.6px;
+    color: #FAA729;
+}
+
+.content_box_topLeft,
+.content_box_topRight span {
+    font-size: 1rem;
+}
+
+.content_introduce {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.content_introduce img {
+    width: 100%;
+}
+
+.salad_name {
+    padding-top: .5rem;
+    color: #CACACA;
+    font-size: 1rem;
+    width: 95.5%;
+    margin: 0 auto;
+}
+
+.salad_name > span {
+    margin-left: 1rem;
+    color: black;
+}
+
+.sauce_two,
+.delivery_time {
+    margin-left: .5rem;
+}
+
+.salad_name span.color {
+    color: #FAA729;
+}
+
+
+/*脚部样式*/
+
+.footer > div {
+    width: 33.333333%;
+    color: #b6b6b6;
+    line-height: 4rem;
+    float: left;
+    text-align: center;
+}
+
+.footer .footer_one {
+    color: black;
+    position: relative;
+}
+
+.footer_one img {
+    float: left;
+    width: 2rem;
+    margin: 1rem 0 1rem 1rem;
+}
+
+.footer_one .badge {
+    position: absolute;
+    top: 0.6rem;
+    left: 2.3rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    line-height: 1rem;
+    font-size: 16px;
+    font-family: serif;
+    color: #fff;
+    background-color: #FAA729;
+    border-radius: 0.6rem;
+}
+
+.footer .footer_two {
+    color: black;
+    background: #FF9934;
+}
+
+.footer .footer_three {
+    color: white;
+    background: #FD3363;
+}
+
+.canopy {
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 900;
+    transition: none 0.2s ease;
+    opacity: 1;
+    display: none;
+}
+
+.salad_popup {
+    width: 100%;
+    max-height: 500px;
+    overflow-y: scroll;
+    z-index: 999;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    display: none;
+}
+
+.salad_layout_title,
+.salad_block_item {
+    border-bottom: 1px solid #e5e5e5;
+    border-top-width: 0;
+    position: static;
+    padding: 10px 0;
+    overflow: hidden;
+    width: 95.5%;
+    margin: 0 auto;
+}
+
+.salad_layout_title .thumb {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    position: relative;
+    float: left;
+}
+
+.salad_layout_title .thumb img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.goods_base_info {
+    margin-left: 68px;
+    width: auto;
+    position: relative;
+}
+
+.goods_base_info p {
+    white-space: nowrap;
+    margin: 0 0 2px;
+    padding-right: 52px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.goods_base_info p:nth-child(2) {
+    color: #FAA729;
+    font-size: 1.2rem;
+}
+
+.salad_cancel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+}
+
+.salad_cancel_img {
+    height: 22px;
+    width: 22px;
+    background-image: url('../images/icon_close.png');
+    background-size: 22px 22px;
+}
+
+.salad_layout_content {
+    overflow-y: scroll;
+    line-height: 20px;
+    background-color: #f8f8f8;
+    max-height: 554px;
+    background: white;
+}
+
+.salad_goods_models {
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 0 0 0 10px;
+    list-style: none;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.salad_list_container {
+    padding: 10px 0 0;
+    border: 0;
+}
+
+.salad_sel_title {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.salad_list_container ul {
+    padding-right: 50px;
+}
+
+.salad_list_container .sku-tag {
+    position: relative;
+    margin: 0 10px 10px 0;
+    min-width: 32px;
+    max-width: 180px;
+    line-height: 16px;
+    padding: 5px 9px;
+    margin-bottom: 10px;
+    color: #333;
+    border-color: #999;
+    background-color: transparent;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.salad_list_active {
+    color: white !important;
+    background: #FAA729 !important;
+}
+
+.salad_block_item {
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+}
+
+.salad_block_item > span {
+    line-height: 48px;
+}
+
+.salad_quantity {
+    float: right;
+}
+
+
+/*新加的a按钮*/
+
+.salad_quantity a {
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    width: 23px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    background: #fff;
+    font-size: 16px;
+    color: black;
+}
+
+.salad_quantity span {
+    width: 32px;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0 -6px;
+    line-height: 24px;
+}
+
+
+
+
+.ui-page-theme-a .ui-body-inherit {
+    background-color: #fff;
+    border-color: #ddd;
+    color: #333;
+    text-shadow: 0 1px 0 #f3f3f3;
+    width: 42px;
+    height: 30px;
+}
+
+.salad_quantity > div {
+    width: 24px;
+    height: 24px;
+    border-radius: 0 !important;
+    float: left;
+}
+
+.salad_quantity > div:nth-child(2) {
+    border: none;
+}
+
+.ui-input-text input,
+.ui-input-search input {
+    min-height: 24px;
+    background: #fff;
+}
+
+.salad_quantity input {
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 24px;
+}
+
+.ui-shadow-inset,
+.ui-page-theme-a .ui-focus,
+.ui-page-theme-a textarea {
+    box-shadow: none;
+    resize: none;
+}
+
+.salad_remark {
+    padding: 10px 0;
+    overflow: hidden;
+    width: 95.5%;
+    margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.salad_remark span,
+.salad_remark div {
+    float: left;
+}
+
+.salad_remark span {
+    line-height: 45px;
+}
+
+.salad_remark div {
+    width: 70% !important;
+    border: 0 !important;
+    margin-left: 5%;
+}
+
+.ui-input-text input {
+    padding: 0.2rem;
+}
+
+.salad_btn_submit {
+    width: 100%;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    background: #FAA729;
+}
+
+.salad_btn_submit > div {
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.plase_select {
+    width: 70%;
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    top: 40%;
+    left: 15%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    background: rgba(9, 9, 10, 0.8);
+}
+
+.time_select {
+    float: left;
+    width: 50% !important;
+}
+
+.time_select:nth-child(2) {
+    background: #FD3363;
+}

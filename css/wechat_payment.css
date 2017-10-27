@@ -1,0 +1,83 @@
+.ui-page-theme-a .ui-bar-inherit {
+    border-color: #CCC;
+}
+
+.ui-page-theme-a .ui-bar-inherit {
+    background: white;
+}
+
+.ui-page-theme-a .ui-btn {
+    background-color: white;
+    border-color: white;
+    color: #989898;
+    font-size: 30px;
+}
+
+.ui-shadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.back {
+    font-size: 30px;
+}
+
+.ui-btn-left {
+    top: 0;
+}
+
+.ui-btn {
+    padding: 0;
+}
+
+.wechat_payment {
+    width: 95.5%;
+    margin: 0 auto;
+}
+
+.wechat_payment table {
+    width: 100%;
+}
+
+.wechat_payment table:nth-child(1) {
+    border-bottom: 0.3rem solid #F2F2F2;
+}
+
+.wechat_payment table tr td {
+    line-height: 3rem;
+}
+
+.wechat_payment table tr td:nth-child(2) {
+    float: right;
+    color: #FF9934;
+}
+
+.wechat_payment table:nth-child(2) tr:nth-child(1) td,
+.wechat_payment table:nth-child(2) {
+    border-bottom: 1px solid #CCC;
+}
+
+.wechat_payment table:nth-child(2) tr td:nth-child(1) {
+    overflow: hidden;
+}
+
+.wechat_payment table:nth-child(2) tr td:nth-child(1) img {
+    float: left;
+    width: 2rem;
+    margin: 0.4rem 1rem 0 0;
+}
+
+.wechat_payment table:nth-child(2) tr td:nth-child(2) img {
+    width: 2.5rem;
+    margin-top: 0.3rem;
+}
+
+.time_limit {
+    font-size: 0.6rem;
+    text-align: center;
+    margin-top: 6rem;
+}
+.time_limit span {
+    color: #FF9934;
+}

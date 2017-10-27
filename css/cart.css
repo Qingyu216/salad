@@ -1,0 +1,57 @@
+@media screen and (max-width:370px) {
+    .user_content_top_img {
+        width: 90px !important;
+        height: 90px !important;
+        border-radius: 45px;
+    }
+    .user_content_top_text {
+        font-size: 1rem !important;
+        margin-left: 1rem !important;
+        margin-top: 15px !important;
+    }
+}
+
+/*内容部分样式*/
+
+.content.notop {
+    padding-top: 0;
+}
+
+.content {
+    overflow-x: hidden;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.content .content_box {
+    margin: 0 auto 4rem;
+    overflow: hidden;
+    height: 100%;
+}
+
+.address_null {
+    width: 80%;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.address_null img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.address_null .address_null_text {
+    font-size: 1.3rem;
+    margin: 2rem 0 4rem 0;
+    font-family: cursive;
+    text-align: center;
+}
+
+.address_null .address_null_btn {
+    padding: 0.7rem 0;
+    width: 100%;
+    text-align: center;
+    background: #306EB9;
+    color: white;
+    font-size: 1.1rem;
+}

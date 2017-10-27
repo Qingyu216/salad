@@ -1,0 +1,61 @@
+@media screen and (max-width:370px) {
+    .myorder_defray .myorder_defray_left,
+    .myorder_defray .myorder_defray_right {
+        font-size: 0.9rem;
+    }
+
+    .myorder_defray_money > span {
+        font-size: 1rem !important;
+    }
+    .myorder_defray_money > div {
+        padding: 0.3rem 1.5rem !important;
+    }
+}
+
+/*内容部分样式*/
+
+.content.notop {
+    padding-top: 0;
+}
+
+.content {
+    overflow-x: hidden;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.content .content_box {
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%;
+    width: 95.5%;
+}
+
+.myOrder_tab {
+    overflow: hidden;
+}
+
+.myOrder_tab ul li {
+    width: 20%;
+    float: left;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.myOrder_tab ul li.myOrder_tab_selected {
+    color: #FF9934;
+    border-bottom: 2px solid #FF9934;
+}
+
+.order_empty img {
+    width: 100%;
+}
+
+.order_empty_btn {
+    padding: 0.7rem 0;
+    width: 100%;
+    text-align: center;
+    background: #306EB9;
+    color: white;
+    font-size: 1.1rem;
+}

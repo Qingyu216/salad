@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>B•Buff能力沙拉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/submit_order.css">
+    <link rel="stylesheet" href="../css/area.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" class="submit_order_page">
+        <!--内容部分-->
+        <form action="" class="address_content_form">
+            <div data-role="main" class="content notop">
+                <div class="content_box">
+                    <div class="order_addr_select">
+                        <a href="javascript:;" data-ajax="false" class="hide">
+                            <div class="new_addr_before">
+                                <img src="../images/addr-img.png">
+                                <span class="new_addr_text">新增收货地址</span>
+                                <div class="arrow_right"></div>
+                            </div>
+                        </a>
+                        <div class="new_addr_after">
+                            <ul class="express_detail">
+                                <li class="clearfix">
+                                    <span class="name">收货人：<span>lqyu</span></span>
+                                    <span class="tel">18911615202</span>
+                                </li>
+                                <li class="address_detail">收货地址： <span>北京市北京市东城区建国门南大街万豪中心一层 嘉和一品粥(建国门店)</span></li>
+                            </ul>
+                            <div class="arrow_right"></div>
+                        </div>
+                        <img src="../images/border_img.png">
+                    </div>
+                    <div class="submit_order_header">
+                        <a class="font-size-14" href="../index.html">B·Buff能量沙拉</a>
+                    </div>
+                    <ul class="submit_li_food">
+                        <li>
+                            <img src="../images/1.jpg">
+                            <div class="submit_info_text">
+                                <h4>维京猎手—三文鱼鳄梨波奇</h4>
+                                <p class="submit_gray_darker">9月1号, 16:00-17:00</p>
+                            </div>
+                            <div class="submit_info_price">
+                                <h4>￥55.00</h4>
+                                <p class="submit_gray_darker">x1</p>
+                            </div>
+                        </li>
+                        <div style="height: 0.5rem;background:#F8F8F8;"></div>
+                        <li>
+                            <img src="../images/2.jpg">
+                            <div class="submit_info_text">
+                                <h4>B·Buff—亮彩五日套餐</h4>
+                                <p class="submit_gray_darker">9月1号-9月7号, 17:00-18:00, 含面包</p>
+                            </div>
+                            <div class="submit_info_price">
+                                <h4>￥255</h4>
+                                <p class="submit_gray_darker">x2</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="submit_total">
+                        <span class="order_message">合计</span>
+                        <div class="submit_total_num">¥335.00</div>
+                    </div>
+                    <div style="height: 0.5rem;background:#F8F8F8;"></div>
+                    <div class="submit_total">
+                        <span class="order_message">优惠</span>
+                        <div class="coupons_collect">使用优惠券&nbsp;&nbsp;<span>&gt;</span></div>
+                    </div>
+                    <div class="submit_order_total">
+                        <p><span>商品金额</span><span class="submit_order_total_top">¥335.00</span></p>
+                        <p><span>运费</span><span class="submit_order_total_bottom">+ ¥0.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <!--脚部内容-->
+            <div id="footer" class="footer submit_price_btn">
+                <div>
+                    <span>合计：</span><span>¥335.</span><span>00</span>
+                    <button class="commit_bill_btn">提交订单</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="out_of_distribution">
+        <img src="../images/cart_alert.png">
+        <p>您配送的地址暂不支持配送，请查看配送区域地图再进行地址填写...</p>
+        <div class="out_of_distribution_btn">知道了</div>
+    </div>
+    <div class="address_select">
+        <div class="content_box address_addEdit">
+            <div>
+                <div style="float: left;">
+                    <span class="addressId" style="display: none;">${list.id}</span>
+                    <span class="addr_select_btn checked"></span>
+                </div>
+                <div class="addr_select_content">
+                    <p class="address_addEdit_name"><span class="address_addEdit_name_one">李清玉</span>（<span>男士</span>）<span class="address_addEdit_tell">18911615202</span></p>
+                    <div class="delivery_address">
+                        <div class="delivery_address_left">公司</div>
+                        <div class="delivery_address_right">1111<span>2222</span>（<span>3333333333</span>）<span>413</span></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="float: left;"><span class="addr_select_btn"></span></div>
+                <div class="addr_select_content">
+                    <p class="address_addEdit_name"><span class="address_addEdit_name_one">666</span>（<span>女士</span>）<span class="address_addEdit_tell">155145515662</span></p>
+                    <div class="delivery_address">
+                        <div class="delivery_address_left">家</div>
+                        <div class="delivery_address_right">嘉和一品粥<span>中关村店</span>（<span>北京市海淀区海淀大街甲36号</span>）<span>403</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="" data-ajax="false" class="add_addr">
+            <div>
+                <img src="../images/add_addr.png">
+                <span>新增地址</span>
+            </div>
+        </a>
+    </div>
+    <div class="address_add">
+        <!--内容部分-->
+        <form action="" class="address_content_form">
+            <div data-role="main" class="content notop">
+                <div class="content_box address_add_content">
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>联系人</td>
+                            <td>
+                                <div class="name_user">
+                                    <input type="text" placeholder="您的姓名">
+                                </div>
+                                <div class="sex_select_div">
+                                    <span sex="1" class="sex_select_span sex_checked"></span>
+                                    <div>先生</div>
+                                </div>
+                                <div class="sex_select_div sex_ml">
+                                    <span sex="2" class="sex_select_span"></span>
+                                    <div>女士</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机号码</td>
+                            <td>
+                                <div><input type="text" placeholder="送餐员联系您的电话"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>所在城市</td>
+                            <td>
+                                <input id="demo1" type="text" readonly="" placeholder="城市选择特效" value="" />
+                                <input id="value1" type="hidden" value="20,234,504" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>收货地址</td>
+                            <td class="ceiving_address">烦烦烦烦烦烦烦</td>
+                        </tr>
+                        <tr>
+                            <td>门牌号</td>
+                            <td><input type="text" placeholder="请输入门号等详细信息"></td>
+                        </tr>
+                        <tr>
+                            <td>地址类型(选填)</td>
+                            <td>
+                                <div class="addr_select_div">
+                                    <span index="1" class="addr_select_span addr_checked"></span>
+                                    <div>公司</div>
+                                </div>
+                                <div class="addr_select_div addr_ml">
+                                    <span index="2" class="addr_select_span"></span>
+                                    <div>家</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--脚部内容-->
+            <div id="footer" class="footer navBar">
+                <input type="button" value="保存" class="address_add_save">
+            </div>
+        </form>
+        <div class="ceiving_address_alert">
+            <p>请选择所在城市</p>
+            <div class="ceiving_alert_sure">确定</div>
+        </div>
+    </div>
+    <script src="../js/LAreaData1.js"></script>
+    <script src="../js/LAreaData2.js"></script>
+    <script src="../js/LArea.js"></script>
+    <script>
+        $(function() {
+            $('.commit_bill_btn').click(function() {
+                $('.out_of_distribution').show();
+            });
+
+            $('.out_of_distribution_btn').click(function() {
+                $(this).parent().hide();
+            });
+
+            //点击地址进入地址选择
+            $('.order_addr_select a').click(function() {
+                $('.address_add').show();
+                $('.submit_order_page').hide();
+            });
+            $('.order_addr_select>div').click(function() {
+                $('.address_select').show();
+                $('.submit_order_page').hide();
+            });
+
+            //默认地址选择
+            $('.addr_select_btn').click(function(event) {
+                $(this).addClass('checked').parent().parent().siblings('div').find('.addr_select_btn').removeClass('checked');
+                $('.express_detail .clearfix .name span').text($(this).parent().parent().find('.addr_select_content').children('.address_addEdit_name').find('.address_addEdit_name_one').text());
+                $('.express_detail .clearfix .tel').text($(this).parent().parent().find('.addr_select_content').children('.address_addEdit_name').find('.address_addEdit_tell').text());
+                $('.address_detail span').text($(this).parent().parent().find('.addr_select_content').children('.delivery_address').find('.delivery_address_right').text());
+                $('.address_select').hide();
+                $('.submit_order_page').show();
+            });
+
+            $('.sex_select_div').click(function(event) {
+                $(this).children('span').addClass('sex_checked').parent().siblings('.sex_select_div').children('span').removeClass('sex_checked');
+            });
+            $('.addr_select_div').click(function(event) {
+                $(this).children('span').addClass('addr_checked').parent().siblings('.addr_select_div').children('span').removeClass('addr_checked');
+            });
+
+            //弹出地址选择
+            $('.add_addr').click(function() {
+                $('.address_select').hide();
+                $('.address_add').show();
+            });
+
+            //地址选择
+            var area1 = new LArea();
+            area1.init({
+                'trigger': '#demo1', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+                'valueTo': '#value1', //选择完毕后id属性输出到该位置
+                'keys': {
+                    id: 'id',
+                    name: 'name'
+                }, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+                'type': 1, //数据源类型
+                'data': LAreaData //数据源
+            });
+            area1.value = [1, 13, 3]; //控制初始位置，注意：该方法并不会影响到input的value
+
+
+            //收货地址
+            $('.ceiving_address').click(function() {
+                if ($('#demo1').val() == "") {
+                    $('.ceiving_address_alert').show();
+                    $('.address_content_form').css('opacity', '0.3');
+                } else {
+                    $('.ceiving_address_alert').hide();
+                    $('.address_content_form').css('opacity', '1');
+                }
+            });
+            $('.ceiving_alert_sure').click(function() {
+                $(this).parent().hide();
+                $('.address_content_form').css('opacity', '1');
+            });
+        });
+    </script>
+</body>
+
+</html>

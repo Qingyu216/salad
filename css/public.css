@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.ui-page,
+body.ui-mobile-viewport {
+    background: white;
+}
+
+.ui-overlay-a,
+.ui-page-theme-a,
+.ui-page-theme-a .ui-panel-wrapper {
+    text-shadow: none;
+}
+
+.ui-page-theme-a a {
+    font-weight: 100;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+.ui-page-theme-a .ui-bar-inherit {
+    text-shadow: none;
+    border-color: #306EB9;
+}
+
+.header {
+    background: #306EB9 !important;
+    overflow: hidden;
+    padding: .2rem 0;
+}
+
+.header img {
+    width: 2rem;
+    float: left;
+    margin: 0 0.5rem 0 1rem;
+}
+
+.header span {
+    line-height: 2rem;
+    color: white;
+}
+
+.delimiter {
+    margin: 1rem 0;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    box-sizing: border-box;
+    border-top: 1px solid #f0f0f0;
+    background-color: #ffffff;
+    z-index: 100;
+}
+
+.badge {
+     position: absolute;
+     top: -0.4rem;
+     right: -0.8rem;
+     width: 1.2rem;
+     height: 1.2rem;
+     line-height: 1rem;
+     font-size: 16px;
+     font-family: serif;
+     color: #fff;
+     background-color: #FF9934;
+     border-radius: 0.6rem;
+     display: none;
+ }
+
+.footer.navBar > .home > span {
+    background-image: url(../images/home_def.png);
+}
+
+.footer.navBar > .home.active > span {
+    background-image: url(../images/home_def_hover.png);
+}
+
+.footer.navBar > a {
+    width: 25%;
+    color: #b6b6b6;
+    padding-top: 0.5rem;
+    text-decoration: none;
+}
+
+.footer > a {
+    display: block;
+    float: left;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer > a > span {
+    position: relative;
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.footer > a > p {
+    font-size: 12px;
+}
+
+.footer.navBar > a.active {
+    color: #FF9934;
+}
+
+.footer.navBar > .fuli.active > span {
+    background-image: url(../images/fuli_hover1.png);
+}
+
+.footer.navBar > .fuli > span {
+    background-image: url(../images/fuli_def.png);
+}
+
+.footer.navBar > .cart > span {
+    background-image: url(../images/cart_def.png);
+}
+
+.footer.navBar > .cart.active > span {
+    background-image: url(../images/cart_hover1.png);
+}
+
+.footer.navBar > .my > span {
+    background-image: url(../images/my_def.png);
+}
+
+.footer.navBar > .my.active > span {
+    background-image: url(../images/my_hover1.png);
+}

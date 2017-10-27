@@ -1,0 +1,199 @@
+/*内容部分样式*/
+
+.content.notop {
+    padding-top: 0;
+}
+
+.content {
+    overflow-x: hidden;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.content .content_box {
+    margin: 0 auto 4rem;
+    overflow: hidden;
+    height: 100%;
+}
+
+.badge {
+    position: absolute;
+    top: -0.4rem;
+    right: -0.8rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    line-height: 1rem;
+    font-size: 16px;
+    font-family: serif;
+    color: #fff;
+    background-color: #FF9934;
+    border-radius: 0.6rem;
+    display: none;
+}
+
+.address_addEdit {
+    width: 95.5%;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+.address_addEdit .address_addEdit_name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.address_addEdit .delivery_address {
+    overflow: hidden;
+}
+
+.delivery_address .delivery_address_left {
+    padding: 0.4rem 0;
+    width: 4rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    background: #3B7EFF;
+    color: white;
+    float: left;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+}
+
+.delivery_address .delivery_address_right {
+    font-size: 1rem;
+    color: #666;
+}
+
+.acquiescence_select {
+    overflow: hidden;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.acquiescence_select span.acquiescence_checked {
+    border-color: #306EB9;
+    position: relative;
+    float: left;
+    margin-top: 0.5rem;
+}
+
+.acquiescence_select span {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid #999;
+    margin-right: 0.8rem;
+    background: #fff;
+    display: inline-block;
+    float: left;
+    margin-top: 0.5rem;
+}
+
+.acquiescence_select span.acquiescence_checked:after {
+    content: '';
+    width: 0.6rem;
+    height: 0.6rem;
+    background: #306EB9;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.3rem;
+    left: 50%;
+    margin-left: -0.3rem;
+}
+
+.acquiescence_select .acquiescence_text {
+    font-size: 1rem;
+    float: left;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.acquiescence_select img {
+    width: 1.5rem;
+    float: left;
+    margin-right: 0.6rem;
+}
+
+.acquiescence_select .edit_btn,
+.acquiescence_select .delete_btn {
+    float: right;
+    margin: 0 2rem 0 0.2rem;
+    color: #666;
+    text-align: center;
+    border: 1px solid #FF9934;
+    color: #FF9934;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+}
+
+.acquiescence_select .edit_btn a {
+    color: #FF9934;
+}
+
+.addEdit_address_alert {
+    position: absolute;
+    width: 70%;
+    top: 30%;
+    left: 15%;
+    background: white;
+    z-index: 999;
+    overflow: hidden;
+    display: none;
+    box-shadow: 0 0 20px #000;
+}
+
+.addEdit_address_alert p {
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 1.2rem;
+}
+
+.addEdit_address_alert > div {
+    padding: 0.7rem 0;
+    width: 50%;
+    text-align: center;
+    background: #FF9934;
+    color: white;
+    float: left;
+    font-size: 1.1rem;
+    border-top: 1px solid #D0D0D0;
+}
+
+.addEdit_address_alert .addEdit_alert_cancel {
+    background: white;
+    color: black;
+}
+
+.address_addEdit > div:nth-child(even) {
+    margin-top: 2rem;
+}
+
+.add_addr {
+    height: auto;
+    width: auto;
+}
+
+.add_addr span {
+    color: white;
+}
+
+.add_addr div {
+    width: 100%;
+    position: absolute;
+    bottom: 4rem;
+    background: #FF9934;
+}
+
+.add_addr div img,
+.add_addr div span {
+    float: left;
+    line-height: 35px;
+}
+
+.add_addr div img {
+    margin-left: 30%;
+}
+
+.add_addr div span {
+    margin-left: 5%;
+}

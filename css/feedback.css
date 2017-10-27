@@ -1,0 +1,143 @@
+@media screen and (max-width:370px) {
+    .user_content_top_img {
+        width: 90px !important;
+        height: 90px !important;
+        border-radius: 45px;
+    }
+    .user_content_top_text {
+        font-size: 1rem !important;
+        margin-left: 1rem !important;
+        margin-top: 15px !important;
+    }
+}
+
+/*内容部分样式*/
+
+.content.notop {
+    padding-top: 0;
+}
+
+.content {
+    overflow-x: hidden;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.content .content_box {
+    margin: 0 auto 4rem;
+    overflow: hidden;
+    height: 100%;
+}
+
+.feedback .e_con {
+    padding: 1.5rem 0.85rem;
+}
+
+.feedback .e_con p {
+    color: #999;
+    padding-bottom: 0.5rem;
+    text-indent: 0.3rem;
+}
+
+.feedback .e_con .e_conlist li {
+    padding-top: 1.5rem;
+    line-height: 1.4rem;
+}
+
+
+.feedback .e_con .e_conlist li span {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid #999;
+    margin-right: 0.8rem;
+    background: #fff;
+    display: inline-block;
+}
+
+.feedback .e_con .e_conlist li span.checked {
+    border-color: #FF9934;
+    position: relative;
+}
+
+.feedback .e_con .e_conlist li span.checked:after {
+    content: '';
+    width: 0.6rem;
+    height: 0.6rem;
+    background: #FF9934;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.3rem;
+    left: 50%;
+    margin-left: -0.28rem;
+}
+
+.e_opinion {
+    padding: 0 0.85rem;
+    margin-bottom: 4rem;
+}
+
+.e_opinion .e_empty {
+    width: 100%;
+    word-break: break-all;
+}
+
+.e_opinion textarea {
+    width: 100%;
+    font-size: 0.8rem;
+    font-family: "微软雅黑", Arial, Tahoma, Helvetica, sans-serif;
+    resize: none;
+    outline: none;
+    min-height: 4rem;
+}
+
+.e_opinion .e_num {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.e_opinion .e_btn {
+    width: 7.5rem;
+    line-height: 2rem;
+    text-align: center;
+    background: #FF9934;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.ui-shadow-inset,
+.ui-page-theme-a .ui-focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.ui-page-theme-a .ui-body-inherit {
+    border-color: white;
+}
+
+.ceiving_address_alert {
+            position: absolute;
+            width: 70%;
+            top: 30%;
+            left: 15%;
+            background: white;
+            z-index: 999;
+            display: none;
+            box-shadow: 0 0 20px #000;
+        }
+
+        .ceiving_address_alert p {
+            text-align: center;
+            padding: 3rem 0;
+            font-size: 1.2rem;
+        }
+
+        .ceiving_address_alert>div {
+            padding: 0.7rem 0;
+            width: 100%;
+            text-align: center;
+            background: #e5005a;
+            color: white;
+            font-size: 1.1rem;
+        }

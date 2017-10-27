@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>B•Buff能力沙拉</title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/shopping.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/cart_food_base.css" />
+    <link type="text/css" rel="stylesheet" href="../css/cart_food.css" />
+</head>
+
+<body>
+    <div class="shopping page_content">
+        <div class="shop-group-item">
+            <div class="shop-name">
+                <input type="checkbox" class="check goods-check shopCheck">
+                <h4><a href="#">B·Buff能量沙拉</a></h4>
+                <div class="coupons">编辑</div>
+            </div>
+            <ul>
+                <li>
+                    <div class="delete_food" onclick="delete_food(this)">删除</div>
+                    <div class="shop-info">
+                        <input type="checkbox" class="check goods-check goodsCheck">
+                        <div class="shop-info-img">
+                            <a href="#"><img src="../images/1.jpg" /></a>
+                        </div>
+                        <div class="shop-info-text">
+                            <h4>维京猎手—三文鱼鳄梨波奇</h4>
+                            <div class="shop-brief"><span>9月1号</span>，<span>16:00-17:00</span></div>
+                            <div class="shop-price">
+                                <div class="shop-pices">￥<b class="price">100.00</b></div>
+                                <div class="shop-arithmetic">
+                                    <a href="javascript:;" class="minus">-</a>
+                                    <span class="num">1</span>
+                                    <a href="javascript:;" class="plus">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <div style="height: 1rem;background:#F8F9FA;"></div>
+                <li>
+                    <div class="delete_food" onclick="delete_food(this)">删除</div>
+                    <div class="shop-info">
+                        <input type="checkbox" class="check goods-check goodsCheck">
+                        <div class="shop-info-img">
+                            <a href="#"><img src="../images/2.jpg" /></a>
+                        </div>
+                        <div class="shop-info-text">
+                            <h4>B·Buff—亮彩五日套餐</h4>
+                            <div class="shop-brief"><span>9月1号-9月7号</span>，<span>17:00-18:00</span>，<span>含面包</span></div>
+                            <div class="shop-price">
+                                <div class="shop-pices">￥<b class="price">100.00</b></div>
+                                <div class="shop-arithmetic">
+                                    <a href="javascript:;" class="minus">-</a>
+                                    <span class="num">1</span>
+                                    <a href="javascript:;" class="plus">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <div style="height: 1rem;background:#F8F9FA;"></div>
+            </ul>
+            <div class="shopPrice">本店总计：￥<span class="shop-total-amount ShopTotal">0.00</span></div>
+            <div class="unable_buy">以下商品无法一起购买</div>
+            <div class="lapse_box">
+                <div class="shop-info">
+                    <div class="shop-info-img">
+                        <a href="#"><img src="../images/1.jpg" /></a>
+                    </div>
+                    <div class="shop-info-text">
+                        <h4>维京猎手—三文鱼鳄梨波奇</h4>
+                        <div class="shop-brief"><span>9月1号</span>，<span>16:00-17:00</span></div>
+                        <div class="shop-price">
+                            <div class="shop-pices">￥<b class="price">100.00</b></div>
+                            <div class="shop-arithmetic">x1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-info">
+                    <div class="shop-info-img">
+                        <a href="#"><img src="../images/2.jpg" /></a>
+                    </div>
+                    <div class="shop-info-text">
+                        <h4>维京猎手—三文鱼鳄梨波奇</h4>
+                        <div class="shop-brief"><span>9月1号</span>，<span>16:00-17:00</span></div>
+                        <div class="shop-price">
+                            <div class="shop-pices">￥<b class="price">100.00</b></div>
+                            <div class="shop-arithmetic">x1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lapse_food_btn" align="center">
+                    <a href="javascript:;">清空失效商品</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="payment-bar">
+        <div class="all-checkbox"><input type="checkbox" class="check goods-check" id="AllCheck">全选</div>
+        <a href="#" class="settlement">结算</a>
+        <div class="shop-total">
+            <strong>总价：<i class="total" id="AllTotal">0.00</i></strong>
+            <span>不含运费</span>
+        </div>
+    </div>
+    <div class="popout_confirm">
+        <p>确定要删除该商品吗？</p>
+        <div class="popout_confirm_cancel">取消</div>
+        <div class="popout_confirm_sure">确定</div>
+    </div>
+    <div class="plase_select">请选择要购买的商品！</div>
+    <script>
+        $(function() {
+            $('.coupons').click(function() {
+                if ($('.delete_food').css('display') == 'none') {
+                    $('.delete_food').show();
+                    $(this).text('完成');
+                } else {
+                    $('.delete_food').hide();
+                    $(this).text('编辑');
+                }
+            });
+            
+            
+            //删除失效商品
+            $('.lapse_food_btn a').click(function(){
+                $('.lapse_box').hide();
+                $('.unable_buy').hide();
+            });
+        });
+
+        //删除购物车的物品
+        function delete_food(_this) {
+            $('.popout_confirm').show();
+            $('.page_content').css('opacity', '0.3');
+            $('.popout_confirm_cancel').click(function() {
+                $(this).parent().hide();
+                $('.page_content').css('opacity', '1');
+            });
+            $('.popout_confirm_sure').click(function() {
+                $(_this).parent().remove();
+                $(this).parent().hide();
+                $('.page_content').css('opacity', '1');
+            });
+        }
+
+        //点击结算进行判断
+        $('.settlement').click(function() {
+            var goods = $('.shop-group-item ul li').find(".goodsCheck");
+            var i = 0;
+            goods.each(function() {
+                if ($(this).prop("checked") == true) {
+                    i++;
+                }
+            });
+            if (i < 1) {
+                $('.plase_select').show(300).delay(1000).hide(300);
+            } else {
+                alert(1);
+            }
+        });
+    </script>
+</body>
+
+</html>

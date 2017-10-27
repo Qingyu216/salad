@@ -1,0 +1,197 @@
+@media screen and (max-width:370px) {
+    .myorder_defray .myorder_defray_left,
+    .myorder_defray .myorder_defray_right {
+        font-size: 0.9rem;
+    }
+
+    .myorder_defray_money > span {
+        font-size: 1rem !important;
+    }
+    .myorder_defray_money > div {
+        padding: 0.3rem 1.5rem !important;
+    }
+}
+
+/*内容部分样式*/
+
+.content.notop {
+    padding-top: 0;
+}
+
+.content {
+    overflow-x: hidden;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.content .content_box {
+    margin: 0 auto 4rem auto;
+    overflow: hidden;
+    height: 100%;
+    width: 95.5%;
+}
+
+.order_detail {
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.order_detail .order_detail_left {
+    float: left;
+    color: #999;
+}
+
+.order_detail .order_detail_right {
+    float: right;
+    color: #FF9934;
+}
+
+.myorder_defray_foot {
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.myorder_defray_foot > img {
+    width: 25%;
+    margin-right: 5%;
+    float: left;
+}
+
+.myorder_defray_name {
+    position: relative;
+    float: left;
+}
+
+.myorder_defray_name p {
+    line-height: 2rem;
+}
+
+.myorder_defray_name p:nth-child(2) {
+    color: #666;
+}
+
+.myorder_defray_name p:nth-child(3) {
+    color: #FF9934;
+    font-size: 0.8rem;
+}
+
+.myorder_defray_name p:nth-child(3) span {
+    font-size: 1.3rem;
+}
+
+.myorder_defray_number {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+.order_detail_addr {
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+.express_detail {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.express_detail li {
+    overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.express_detail .name {
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    color: #333;
+}
+
+.express_detail .tel {
+    float: right;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    color: #333;
+}
+
+.express_detail .address_detail {
+    margin-top: 2px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.distribution_time {
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+.distribution_time span {
+    color: #666;
+}
+
+.goods_total,
+.goods_remark {
+    overflow: hidden;
+    padding: 0.5rem 0;
+}
+
+.goods_total table,
+.goods_remark table {
+    width: 100%;
+}
+
+.goods_total table tr td,
+.goods_remark table tr td {
+    line-height: 2rem;
+}
+
+.goods_total_left {
+    text-align: left;
+}
+
+.goods_remark_left {
+    color: #666;
+    width: 40%;
+    text-align: left;
+}
+
+.goods_remark_right {
+    font-size: 0.8rem;
+    line-height: 1.2rem !important;
+}
+
+.goods_total_right {
+    text-align: right;
+    color: #FF9934;
+}
+
+.order_payment_btn {
+    border-top: 3px solid #F8F9FA;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+.order_payment_btn div {
+    float: right;
+    width: auto;
+    padding: 0.5rem 2rem;
+}
+
+.order_payment_sure {
+    border: 1px solid #FF9934;
+    color: white;
+    background: #FF9934;
+}
+
+.order_payment_cancel {
+    border: 1px solid black;
+    color: black;
+    background: white;
+}

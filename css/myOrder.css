@@ -1,0 +1,75 @@
+/*内容部分样式*/
+
+.content.notop {
+    padding-top: 0;
+}
+
+.content {
+    overflow-x: hidden;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.content .content_box {
+    margin: 0 auto 4rem;
+    overflow: hidden;
+    height: 100%;
+}
+
+.badge {
+    position: absolute;
+    top: -0.4rem;
+    right: -0.8rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    line-height: 1rem;
+    font-size: 16px;
+    font-family: serif;
+    color: #fff;
+    background-color: #FF9934;
+    border-radius: 0.6rem;
+    display: none;
+}
+
+.myOrder_tab {
+    overflow: hidden;
+}
+
+.myOrder_tab ul li {
+    width: 20%;
+    float: left;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.myOrder_tab ul li.myOrder_tab_selected {
+    color: #306EB9;
+    border-bottom: 2px solid #306EB9;
+}
+
+.myOrder_null {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0 4rem 0;
+}
+
+.myOrder_null img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.myOrder_null .myOrder_null_text {
+    font-size: 1.3rem;
+    margin: 1rem 0 2rem 0;
+    font-family: cursive;
+    text-align: center;
+}
+
+.myOrder_null .myOrder_null_btn {
+    padding: 0.7rem 0;
+    width: 100%;
+    text-align: center;
+    background: #306EB9;
+    color: white;
+    font-size: 1.1rem;
+}
